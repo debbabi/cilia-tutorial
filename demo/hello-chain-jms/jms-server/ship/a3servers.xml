@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+	<server id="1" name="S1" hostname="localhost">
+		<service class="org.objectweb.joram.mom.proxies.ConnectionManager"
+				 args="root root"/>
+		<service class="org.objectweb.joram.mom.proxies.tcp.TcpProxyService"
+				 args="16011"/>
+		<service class="fr.dyade.aaa.jndi2.server.JndiServer"
+				 args="16401"/>
+	</server>
+</config>

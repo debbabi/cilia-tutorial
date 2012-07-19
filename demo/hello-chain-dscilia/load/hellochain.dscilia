@@ -1,0 +1,19 @@
+<cilia>
+  <chain id="HelloWorldChain">
+ 
+    <!-- Mediators instances definition -->
+
+    <mediators>
+      <mediator-instance type="GuiInput" id="gui"/>
+      <mediator-instance type="Hello" id="hello"/>
+      <mediator-instance type="ConsoleOutput" id="console"/>
+    </mediators>
+ 
+    <!-- Bindings definition -->
+    <bindings>
+      <binding from="gui:std" to="hello:std"/>
+      <binding from="hello:std" to="console:std"/>
+    </bindings>
+ 
+  </chain>
+</cilia>

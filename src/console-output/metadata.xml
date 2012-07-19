@@ -1,0 +1,19 @@
+<ipojo xmlns:cilia="fr.liglab.adele.cilia">
+
+
+	<processor name="ConsoleOutputProcessor"
+		classname="net.debbabi.cilia.ConsoleOutputProcessor">
+		<cilia:method name="show" data.type="fr.liglab.adele.cilia.Data" />
+	</processor>
+		
+	<mediator-component name="ConsoleOutput">
+		<ports>
+			<in-port name="std" type="string"/>
+			<out-port name="std" type="string"/>
+		</ports>
+		<cilia:processor name="ConsoleOutputProcessor" />
+		<cilia:scheduler name="immediate-scheduler" />
+		<cilia:dispatcher name="multicast-dispatcher" />
+	</mediator-component>
+
+</ipojo>

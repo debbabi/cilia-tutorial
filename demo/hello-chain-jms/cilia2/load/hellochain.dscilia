@@ -1,0 +1,28 @@
+<cilia>
+  <chain id="HelloWorldChain">
+ 
+     <!-- Adapters instances definition -->     
+    <adapters>
+      <adapter-instance type="JMS-in-adapter" id="jms">
+        <property name="jms.topic" value="topic"/>
+			  <property name="jms.host" value="localhost" />
+			  <property name="jms.port" value="16300" />
+			  <property name="jms.login" value="root" />
+			  <property name="jms.password" value="root" />
+      </adapter-instance>  
+    </adapters>     
+ 
+    <!-- Mediators instances definition -->
+    <mediators>      
+      <mediator-instance type="Hello" id="hello"/>
+      <mediator-instance type="ConsoleOutput" id="console"/>
+    </mediators>
+ 
+    <!-- Bindings definition -->
+    <bindings>
+      <binding from="jms:unique" to="hello:std"/>
+      <binding from="hello:std" to="console:std"/>
+    </bindings>
+ 
+  </chain>
+</cilia>

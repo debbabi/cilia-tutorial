@@ -1,1 +1,5 @@
 target/
+*~
+felix-cache/
+.settings
+.project
