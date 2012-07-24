@@ -12,10 +12,6 @@
     <adapters>
       <adapter-instance type="JMS-out-adapter" id="jms">
         <property name="jms.topic" value="topic"/>
-			  <property name="jms.host" value="localhost" />
-			  <property name="jms.port" value="16300" />
-			  <property name="jms.login" value="root" />
-			  <property name="jms.password" value="root" />
       </adapter-instance>  
     </adapters>  
     

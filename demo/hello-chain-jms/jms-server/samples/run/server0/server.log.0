@@ -1,8 +1,24 @@
-FelixStartLevel WARNING 2012-07-18 20:19:50,723, AgentServer#0, init()
-FelixStartLevel WARNING 2012-07-18 20:19:50,727, Trying to find [a3cmlconfig] using 6.0 class loader.
-FelixStartLevel WARNING 2012-07-18 20:19:50,727, Trying to find serialized config using ClassLoader.getSystemResource().
-FelixStartLevel WARNING 2012-07-18 20:19:50,727, Unable to find configuration file: a3cmlconfig
-FelixStartLevel WARNING 2012-07-18 20:19:50,728, AgentServer#0, serialized a3cmlconfig not found
-FelixStartLevel WARNING 2012-07-18 20:19:50,856, AgentServer#0, initialized at Wed Jul 18 20:19:50 CEST 2012
-FelixStartLevel WARNING 2012-07-18 20:19:50,856, AgentServer#0, start()
-FelixStartLevel WARNING 2012-07-18 20:19:50,940, AgentServer#0, started at Wed Jul 18 20:19:50 CEST 2012
+FelixStartLevel WARNING 2012-07-24 09:49:50,766, AgentServer#0, init()
+FelixStartLevel WARNING 2012-07-24 09:49:50,770, Trying to find [a3cmlconfig] using 6.0 class loader.
+FelixStartLevel WARNING 2012-07-24 09:49:50,770, Trying to find serialized config using ClassLoader.getSystemResource().
+FelixStartLevel WARNING 2012-07-24 09:49:50,770, Unable to find configuration file: a3cmlconfig
+FelixStartLevel WARNING 2012-07-24 09:49:50,770, AgentServer#0, serialized a3cmlconfig not found
+FelixStartLevel WARNING 2012-07-24 09:49:50,940, AgentServer#0, initialized at Tue Jul 24 09:49:50 CEST 2012
+FelixStartLevel WARNING 2012-07-24 09:49:50,941, AgentServer#0, start()
+FelixStartLevel WARNING 2012-07-24 09:49:51,040, AgentServer#0, started at Tue Jul 24 09:49:51 CEST 2012
+AgentServer#0.D0.wakeOnConnection SEVERE 2012-07-24 09:50:51,906, AgentServer#0.D0.wakeOnConnection, bad connection setup
+java.io.IOException: Bad magic number:JORAM57 instead of PoolNet0
+	at fr.dyade.aaa.agent.PoolNetwork.readBoot(PoolNetwork.java:1749)
+	at fr.dyade.aaa.agent.PoolNetwork$WakeOnConnection.run(PoolNetwork.java:675)
+	at java.lang.Thread.run(Thread.java:679)
+AgentServer#0.D0.wakeOnConnection SEVERE 2012-07-24 09:51:15,004, AgentServer#0.D0.wakeOnConnection, bad connection setup
+java.io.IOException: Bad magic number:JORAM57 instead of PoolNet0
+	at fr.dyade.aaa.agent.PoolNetwork.readBoot(PoolNetwork.java:1749)
+	at fr.dyade.aaa.agent.PoolNetwork$WakeOnConnection.run(PoolNetwork.java:675)
+	at java.lang.Thread.run(Thread.java:679)
+TcpConnectionListener SEVERE 2012-07-24 09:55:10,456, Bad protocol version number 57 != 55
+TcpConnectionListener SEVERE 2012-07-24 09:55:10,456, 
+java.lang.IllegalAccessException: Bad protocol version number 57 != 55
+	at org.objectweb.joram.mom.proxies.tcp.TcpConnectionListener.acceptConnection(TcpConnectionListener.java:206)
+	at org.objectweb.joram.mom.proxies.tcp.TcpConnectionListener.run(TcpConnectionListener.java:133)
+	at java.lang.Thread.run(Thread.java:679)
